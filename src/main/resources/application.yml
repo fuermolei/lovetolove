@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://192.144.128.76:3306/test?useUnicode=true&amp;characterEncoding=utf8&useSSL=false
+    username: root
+    password: Hualei521.
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 30
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 100
+
+mybatis:
+  mapperLocations: classpath:mapping/*.xml #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.datasource.dao.domain  # 注意：对应实体类的路径
