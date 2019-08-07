@@ -1,0 +1,13 @@
+body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto;background-color: #ffffee}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+h1{font-size: 32px;font-weight: bolder;-webkit-text-stroke:1px #FF9933;color: #FF6633;line-height: 60px; margin-left: 30px;}
+.header{ height:69px; width: 100%; background-color: #cccccc;}
+.between{width: 89%;text-align: center; margin-top: 30px;}
+.love{height: 180px;width: 360px;}
